@@ -1,5 +1,5 @@
 # Warcaby
-Gra w warcaby napisana w c++
+Konsolowa gra w warcaby w języku c++
 
 ## Git w kilku komendach
 
