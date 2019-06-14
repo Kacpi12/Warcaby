@@ -4,7 +4,7 @@ Gra w warcaby napisana w c++
 ## Git w kilku komendach
 
 ### Pierwsze kroki
-`git clone https://github.com/RadoslawPiotrowski/chess-game.git` - pobranie repozytorium
+`git clone https://github.com/Kacpi12/Warcaby.git` - pobranie repozytorium
 
 `git config --global user.name "John Doe"` - ustawienie nazwy autora commitów
 
