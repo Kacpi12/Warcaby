@@ -174,14 +174,47 @@ void rysowanie_planszy()
 	cout << endl <<  "   a   b   c   d   e   f   g   h";
 }
 
+void inincjalizacja_planszy(int plansza[8][8]) {
+	for (int j = 0; j < 3; j++) {
+		for (int i = 0; i < 8; i++) {
+			if (j % 2 == 0) {
+				if (i % 2 == 0) {
+					plansza[j][i] = 0;
+				}
+				else {
+					plansza[j][i] = 2;
+				}
+			}
+			else {
+				if (i % 2 == 0) {
+					plansza[j][i] = 2;
+				}
+				else {
+					plansza[j][i] = 0;
+				}
+			}
+		}
+	}
+}
 
 int main()
 {
 	string nazwa_gracza_1;
 	string nazwa_gracza_2;
 
+	int plansza[8][8];
+	inincjalizacja_planszy(plansza);
+	for (int j = 0; j < 3; j++) {
+		cout << endl;
+		for (int i = 0; i < 8; i++) {
+			if (plansza[j][i] == 0) cout << 'b';
+			else if (plansza[j][i] == 2) cout << 'p';
+
+		}
+	}
+
 	//podanie_nazw(nazwa_gracza_1, nazwa_gracza_2);
-	rysowanie_planszy();
+	//rysowanie_planszy();
 
 	
 }
